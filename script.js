@@ -130,7 +130,7 @@ document.getElementById('adjective').addEventListener('click', (event) => {
 
 document.getElementById('noun2').addEventListener('click', (event) => {
   let element_noun2 = document.getElementById('noun2');
-  element_noun2.innerText = randomMember(getWordss'NOUN'));
+  element_noun2.innerText = randomMember(getWordss('NOUN'));
 
 });
 
