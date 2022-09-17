@@ -66,7 +66,7 @@ test("There are at least 500 words on the page", () => {
 
 const console = document.getElementById("tests");
 
-function getWords(type) {
+function getWordss(type) {
   // Return words of a given type, or all words if type is 'WORD'
   let words = [
     {type: 'ADJECTIVE', value: 'big'},
@@ -113,7 +113,7 @@ let element_text = document.getElementById('text');
 
 document.getElementById('button').addEventListener('click', (event) => {
   let new_li = document.createElement('li');
-  window.speechSynthesis.speak(new SpeechSynthesisUtterance(randomMember(getWords('WORD'))));
+  window.speechSynthesis.speak(new SpeechSynthesisUtterance(randomMember(getWordss('WORD'))));
 
   event.target.appendChild(new_li);
 
