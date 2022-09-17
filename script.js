@@ -124,7 +124,7 @@ document.getElementById('verb').addEventListener('click', (event) => {
 
 document.getElementById('adjective').addEventListener('click', (event) => {
   let element_adjective = document.getElementById('adjective');
-  element_adjective.innerText = randomMember(getWordss(ADJECTIVE'));
+  element_adjective.innerText = randomMember(getWordss('ADJECTIVE'));
 
 });
 
