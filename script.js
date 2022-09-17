@@ -66,6 +66,7 @@ test("There are at least 500 words on the page", () => {
 
 const console = document.getElementById("tests");
 
+//
 function getWordss(type) {
   // Return words of a given type, or all words if type is 'WORD'
   let words = [
@@ -108,14 +109,47 @@ function randomMember(arr) {
 }
 
 
-let element_text = document.getElementById('text');
 
-
-document.getElementById('button').addEventListener('click', (event) => {
-  let new_li = document.createElement('li');
-  window.speechSynthesis.speak(new SpeechSynthesisUtterance(randomMember(getWordss('WORD'))));
-
-  event.target.appendChild(new_li);
+document.getElementById('noun1').addEventListener('click', (event) => {
+  let element_noun1 = document.getElementById('noun1');
+  element_noun1.innerText = randomMember(getWordss('NOUN'));
 
 });
+
+document.getElementById('verb').addEventListener('click', (event) => {
+  let element_verb = document.getElementById('verb');
+  element_verb.innerText = randomMember(getWordss'VERB'));
+
+});
+
+document.getElementById('adjective').addEventListener('click', (event) => {
+  let element_adjective = document.getElementById('adjective');
+  element_adjective.innerText = randomMember(getWordss(ADJECTIVE'));
+
+});
+
+document.getElementById('noun2').addEventListener('click', (event) => {
+  let element_noun2 = document.getElementById('noun2');
+  element_noun2.innerText = randomMember(getWordss'NOUN'));
+
+});
+
+document.getElementById('night').addEventListener('click', (event) => {
+  let element_night = document.getElementById('night');
+  element_night.style.color = '#ffff66';
+  element_night.style.backgroundColor = '#000000';
+
+});
+
+document.getElementById('button').addEventListener('click', (event) => {
+
+});
+
+document.getElementById('day').addEventListener('click', (event) => {
+  let element_day = document.getElementById('day');
+  element_day.style.color = '#333333';
+  element_day.style.backgroundColor = '#33ffff';
+
+});
+//
 prettify.toHTML(run(), console);
