@@ -65,4 +65,57 @@ test("There are at least 500 words on the page", () => {
 });
 
 const console = document.getElementById("tests");
+
+function getWords(type) {
+  // Return words of a given type, or all words if type is 'WORD'
+  let words = [
+    {type: 'ADJECTIVE', value: 'big'},
+    {type: 'ADJECTIVE', value: 'purple'},
+    {type: 'ADJECTIVE', value: 'new'},
+    {type: 'ADJECTIVE', value: 'interesting'},
+    {type: 'ADJECTIVE', value: 'curious'},
+    {type: 'ADJECTIVE', value: 'happy'},
+    {type: 'ADJECTIVE', value: 'busy'},
+    {type: 'ADJECTIVE', value: 'tiny'},
+    {type: 'NOUN', value: 'umbrella'},
+    {type: 'NOUN', value: 'knee'},
+    {type: 'NOUN', value: 'banana'},
+    {type: 'NOUN', value: 'platypus'},
+    {type: 'NOUN', value: 'cat'},
+    {type: 'NOUN', value: 'mouse'},
+    {type: 'NOUN', value: 'house'},
+    {type: 'VERB', value: 'impressed'},
+    {type: 'VERB', value: 'honoured'},
+    {type: 'VERB', value: 'saw'},
+    {type: 'VERB', value: 'ate'},
+    {type: 'VERB', value: 'surprised'},
+    {type: 'VERB', value: 'annoyed'},
+    {type: 'VERB', value: 'touched'},
+    {type: 'VERB', value: 'understood'},
+    {type: 'VERB', value: 'taught'},
+  ];
+  return words.filter(word => type === 'WORD' || word.type === type).map(word => word.value);
+}
+
+function randomInt(n) {
+  // Return a random number from in [0, n[
+  return Math.floor(Math.random()*n);
+}
+
+function randomMember(arr) {
+  // Return a random member of the array
+  return arr[randomInt(arr.length)]
+}
+
+
+let element_text = document.getElementById('text');
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  let new_li = document.createElement('li');
+  window.speechSynthesis.speak(new SpeechSynthesisUtterance(randomMember(getWords('WORD'))));
+
+  event.target.appendChild(new_li);
+
+});
 prettify.toHTML(run(), console);
