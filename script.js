@@ -118,7 +118,7 @@ document.getElementById('noun1').addEventListener('click', (event) => {
 
 document.getElementById('verb').addEventListener('click', (event) => {
   let element_verb = document.getElementById('verb');
-  element_verb.innerText = randomMember(getWordss'VERB'));
+  element_verb.innerText = randomMember(getWordss('VERB'));
 
 });
 
