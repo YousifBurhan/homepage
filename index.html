@@ -1,13 +1,21 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Personal Home Page  Template</title>
-  <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
+<!-- =================
+  WRITE YOUR HTML HERE
 
-</head>
-<body>
+You only need to write the HTML that goes inside the <body> tag. To add things to the <head>, click the ⚙️ 
+   ===================
+-->
+
+<!--- All the tests are red! You have to make them green. 
+
+Q How do you make the tests pass?
+A Meet the requirements!
+
+Make the first test pass by adding a <header> </header>-->
+
  
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <title>Big dream</title>
 </head>
@@ -17,11 +25,11 @@
 
     <header>
 
-        <h1> Yousif Home page </h1>
+        <h1> Yousif page </h1>
 
     </header>
-     
-         <nav class="top-header">
+    
+     <nav class="top-header">
 
   <ul>
   <li><a class = "nav-link" href ="#Home"> Home </a></li>
@@ -40,33 +48,35 @@
       </section>
  
   <section id = "Home">
-  <h1> Home </h1>
+  
 
             <h2 style="background-color:black;color:white">
 
-<p> I'm Yousif Burhan, and it's my pleasure to introduce myself. I was born in Eritea and grew up . I did
+<p id="yousif"> I'm Yousif Burhan, and it's my pleasure to introduce myself. I was born in Eritea and grew up . I did
                 the basic introduction of ICT and have finished my GCSE maths and Level ONE English fanctinal skills.
                 My strength is that I am always ready to take up new challenges and strive for excellence. This is
                 because I believe success and failures are the best way to sculpt ourselves to reach our goals. And I
                 believe in myself and my hard work, and I want fulfillment in everything.
-        </p>
 
-</section> 
-	  
-  <button id="next">NEXT</button>
-  <button id="previous">previous</button>
-  <img id="Image" width="500" height="500">
-	  
-	  <div>
-	  
-         <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg" width=332 height=188 alt="good-job">	  
-	  </div>
- 
+                My short-term goal is to achieve excellence in the skills I'm mastering, take up a challenge in some
+                good organizations, and climb the ladder of success. However, my long-term goal is to be a renowned
+                technical engineer in an organization and climb the ladder of success. However, my long-term goal is to
+                be a renowned technical engineer in an organization and reach the highest level of success.
+            </p>
+
+</section>
+    
+    <section>
+    <button id="next">NEXT</button>
+<button id="previous">previous</button>
+<img id="Image" width="300" height="300">
+ </section>
   <section id = "About">
   <h1> About </h1>
       <h2 style="background-color:black;color:white">
 
-<p> I am experienced software engineer who constantly seeks out innonative solutionsto everyday problems.in my previous college I have done m analytical thinking and collaboration skills, and I love working with a team.                   </p> 
+<p>
+   I am experienced software engineer who constantly seeks out innonative solutionsto everyday problems.in my previous college I have done m analytical thinking and collaboration skills, and I love working with a team.                 </p> 
  
    </section>
 
@@ -74,14 +84,14 @@
   <h1> Skills </h1>
      <h2 style="background-color:black;color:white">
 
- <p> My strongest attribute is my determination. I take on every challenge head-on and do what I need to accomplish my goals, even when the challenge is difficult. Every time I mywas given a new challenge at my previous college, whether it was leading my first team project or meeting a quick deadline, I always enjoyed stepping up and demonstrating skill at that new task.
+ <p> My strongest attribute is my determination. I take on every challenge head-on and do what I need to accomplish my goals, even when the challenge is difficult. Every time that I was given a new challenge at my previous job, whether it was leading my first team project or meeting a quick deadline, I always enjoyed stepping up and demonstrating skill at that new task.
             </p>  </section>
  
 </main>
 
 
 </body>
-
+</html>
 
                <br>
 
@@ -100,21 +110,17 @@
  
 
         <br>
-        <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg" width=332 height=188 alt="good-job">
+        <img id="burhan" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg" width=332 height=188 alt="good-job">
     </main>
-<p>
-  The <button id="noun1">dog</button> <button id="verb">saw</button> the
-  <button id="adjective">white</button>
-  <button id="noun2">cat</button>
+  
+   <h2>please share your feedback here </h2>
+<ul id="list"></ul>
+<textarea id="text-area2" name="comments" placeholder="your comment please" cols="40" rows="3"></textarea><br>
+<button id="button">Submit</button>
 <br>
-<button id="night">night mode</button>
-  <button id="day">day mode</button>
-<br>
-<button id="adjective">white</button>
-<script type="text/javascript" src="script.js"></script>
-</p>
-
+  
     <footer class="c-site-footer"></footer>
+ 
 
 </body>
 
@@ -140,4 +146,9 @@
 
 
 
+
+<!-- Your test console.
+Don't delete!-->
+<aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
+</aside>
 
